@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-layout-page',
@@ -7,7 +6,6 @@ import { RouterModule } from '@angular/router';
   styles: [
   ],
   standalone:false,
- 
 })
 export class LayoutPageComponent {
 

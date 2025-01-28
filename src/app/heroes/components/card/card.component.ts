@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Hero } from '../../interfaces/hero.interface';
 
 @Component({
@@ -6,17 +6,16 @@ import { Hero } from '../../interfaces/hero.interface';
   templateUrl: './card.component.html',
   styles: [
   ],
-  standalone:false,
+  standalone:false
 })
-export class CardComponent implements OnInit { 
+export class CardComponent implements OnInit {
 
   @Input()
   public hero!: Hero;
-  
+
 
   ngOnInit(): void {
-    if(!this.hero){throw Error('Hero property is required')}
+    if ( !this.hero ) throw Error('Hero property is required');
   }
-
 
 }
